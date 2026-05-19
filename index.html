@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dino-run - Mobile & PC</title>
+    <link rel="stylesheet" href="dyno.css"> 
+</head> 
+<body>
+    <h1>Dino-run</h1>
+    
+    <div id="game-container">
+        <div id="game-menu">
+            <div class="menu-content">
+                <input type="text" id="nickname" placeholder="Nickname" maxlength="15">
+                
+                <div class="char-selection">
+                    <p>Scegli il tuo personaggio:</p>
+                    <div class="char-options">
+                        <div class="char-option selected" data-char="dino">
+                            <img src="./img/dino.png" alt="Dino">
+                            <span>Dino</span>
+                        </div>
+                        <div class="char-option" data-char="goku">
+                            <img src="./img/goku.png" alt="Goku">
+                            <span>Goku</span>
+                        </div>
+                        <div class="char-option" data-char="mario">
+                            <img src="./img/super-mario.png" alt="Mario">
+                            <span>Mario</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="play-button">Play</button>
+            </div>
+        </div>
+
+        <canvas id="board"></canvas>
+    </div>
+    <p class="instruction">Tocca lo schermo o premi SPAZIO per saltare</p>
+
+    <script src="dino.js"></script>
+</body>
+</html>
